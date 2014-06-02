@@ -1,0 +1,444 @@
+.col-centred {
+    float: none;
+    margin: 0 auto;
+}
+.container-fluid {
+    font-family: PFAgoraSansPro;
+    padding: 0px;
+    width: 100%;
+    min-width: 260px;
+}
+
+.overlay {
+    background: rgba(132,164,201, 0.54);
+}
+.carousel {    
+    background-position: center top;
+    background-size: cover;
+    background-image: url(../img/4.jpg);
+    background-repeat: no-repeat;
+    padding-top: 18px;
+    padding-bottom: 70px;
+} 
+.arrows {
+    position: relative;
+    width: 100%;    
+}
+
+.right-arr, .left-arr {
+    position: absolute;
+    top: 444px;
+}
+.left-arr {
+    left: 6%;
+}
+.right-arr {
+    right: 6%;
+}
+
+.right-arr:hover, .left-arr:hover {
+    cursor: pointer;
+}
+.container {
+    //padding-left: 0px;
+    //padding-right: 0px;
+    max-width: 930px;
+}
+
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.happy-dev-href {     
+    width: 100%;
+    text-align: right;
+}
+.happy-dev-href a {
+    font-size: 22px;
+    text-decoration: underline;
+    color: #000000;
+}
+
+.logo {
+    margin-top: 13px;
+}
+.logo img {
+    width: 147px;
+}
+.event-title {
+    margin-top: 36px;
+    font-size: 62px;
+}
+.happy-dev span{
+    font-family: PFAgoraSlabPro-UltraBlack;
+}
+.lite {
+    font-family:PFAgoraSansPro-Thin;
+    color: #185dab;
+}
+.event-description {
+    margin-top: 20px;
+    font-size: 29px;
+    color: #3f3f3f;
+}
+
+.social {
+    margin-top: 85px;
+    width: 128px;
+}
+.social a {
+    text-decoration: none;
+    padding-left: 6.5px;
+    padding-right: 6.5px;
+}
+.date {
+    margin-top: 26px;
+}
+.date p {    
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #000000;
+    
+}
+.email {
+    margin-top: 135px;
+}
+.email .email-form-xs {
+    display: none;    
+}
+.email-form-xs .btn {
+    margin-top: 15px;
+}
+
+.email p {
+    font-size: 30px;
+    color: #3f3f3f;
+}
+
+.email .input-group {
+    margin-top: 26px;
+}
+
+.email input, .email .btn {
+    font-family:PFAgoraSansPro-Thin;
+    font-size: 25px;
+    height: 60px;
+    border-radius: 20px;
+}
+
+.email .btn {
+    background-color: #185dab;    
+}
+
+.white-back {
+    background: #ffffff;
+    padding-top: 45px;
+}
+
+.share {    
+     line-height: 43px;
+}
+.share p {
+    margin-bottom: 15px;
+    font-size: 30px;
+    color: #3f3f3f;
+}
+.share a {
+    margin: 0px 7.5px;
+    margin-top: 10px;
+}
+
+
+.share img, .share div {
+    vertical-align: middle;
+}
+.share a, .share div {
+    text-decoration: none;
+    display: inline-block;
+}
+.share a:hover img {
+    display: none;
+}
+.share a:hover .hovered-img {
+    display:inline;
+}
+.hovered-img {
+    display: none;
+}
+
+.share .tw-counter, .vk-counter, .fb-counter {
+    border: 4px solid #c1c1c1;
+    border-radius: 25px;
+}
+
+.share .counter {
+    line-height: 25px;
+    font-size: 25px;
+    text-align: center;
+    color: #c1c1c1;
+    padding: 6px 18px;
+    margin: 0;
+}
+
+.share .tw-share:hover .tw-counter,
+.tw-share:hover .tw-counter .counter{
+    color: #00aeef;
+    border-color: #00aeef;
+}
+.share .vk-share:hover .vk-counter,
+.vk-share:hover .vk-counter .counter{
+    color: #45668e;
+    border-color: #45668e;
+}
+.share .fb-share:hover .fb-counter,
+.fb-share:hover .fb-counter .counter{
+    color: #3b5998;
+    border-color: #3b5998;
+}
+
+.talks {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-top: 105px;
+}
+.headline {
+    width: 140px;
+    position: relative;
+    background: #ffffff;
+    z-index: 999;
+}
+.headline p {
+    font-size: 30px;
+} 
+
+.talks p {
+    background: #ffffff;
+    color: #3f3f3f;    
+}
+
+.talks-block {
+    margin-top: -30px;
+    padding: 65px 40px;
+    border: 3px solid;
+    border-color:#c1c1c1;
+    border-radius: 20px;
+}
+
+.talks-block img {
+    float: left;
+    margin-right: 45px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+.talks-block p {
+    padding-left: 0;
+}
+
+.opinion-2 {
+    margin-top: 75px;
+}
+
+.talks-block .name {
+    color: #3f3f3f;
+    font-size: 25px;
+    margin-bottom: 0px;
+}
+.talks-block .position,
+.talks-block .position a{
+    color: #a0a0a0;
+    font-size: 16px;
+}
+
+.talks-block .position a {
+   text-decoration: underline;
+}
+.talks-block .content {
+    margin-top: 30px;
+    color: #484848;
+    font-size: 20px;
+}
+
+.org {
+    margin-top: 90px;
+    margin-bottom: 135px;
+}
+.org p {
+    font-size: 30px;
+    color: #3f3f3f;
+}
+
+.org a {
+    margin-top: 25px;
+}
+
+@media (max-width: 900px){
+    .right-arr, .left-arr {
+        top:412px;
+    }  
+    .social {
+        margin-top: 55px;
+    }
+    .email {
+        margin-top: 105px;
+    }
+    .talks-block .content {
+        margin-top: 18px;
+        color: #484848;
+        font-size: 20px;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    .happy-dev-href a {
+        font-size: 20px;
+    }
+    .right-arr, .left-arr {
+        top:392px;
+    }   
+    .right-arr img, .left-arr img {
+        width: 40px;         
+    }
+    .social {
+        margin-top: 20px;
+    }
+    .email {
+        margin-top: 80px;
+    }
+    .email p {         
+        font-size: 25px;
+    }    
+    .email input, .email .btn { 
+         font-size: 20px;
+         height: 50px;
+    }
+} 
+
+@media (max-width: 530px) { 
+    /*.talks-block img {
+        float: none;
+    }*/
+    .talks-block .name {
+        font-size: 20px;
+    }
+    .talks-block .position,
+    .talks-block .position a{
+        font-size: 14px;
+    }
+    .talks-block .content {
+        font-size: 16px;
+    }
+    
+}
+
+@media (max-width: 500px) {    
+    .share a {
+        width: 100%;
+    }    
+    .share-logo {
+        margin-right: 5px;
+    }
+    .share-counter {
+        width: 145px;
+    }
+    .share-counter div {
+        float: left;        
+    }
+    .share-block .share-logo {
+    width: 50px;
+    }
+    .share img {
+        float: right;
+    }
+    .email-form {
+         width: 100%;
+    }
+    .talks-block .name {
+        font-size: 16px;
+    } 
+    .talks-block .position,
+    .talks-block .position a{
+        font-size: 12px;
+    }
+    .talks-block .content {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 455px) {
+    .right-arr, .left-arr {
+        top:365px;
+    }   
+    .happy-dev-href a {
+        font-size: 18px;
+    }
+    .event-title {
+        font-size: 42px;
+    }
+    .event-description {
+        margin-top: 10px;        
+        font-size: 20px;
+    }
+    .social {
+        margin-top: 55px;
+    }
+    .date {
+        margin-top: 16px;
+    }
+    .date p {
+        font-size: 20px;
+    }
+    .email {
+        margin-top: 105px;
+    }
+    .email .email-form {
+         display: none;
+    }
+    .email .email-form-xs {
+         display: block;
+    }
+    .email p {         
+        font-size: 21px;
+    }  
+    .talks-block img {
+        float: none;
+    }
+    
+}
+@media (max-width: 325px) {
+    
+    .right-arr, .left-arr {
+        top:330px;
+    }   
+    .right-arr img, .left-arr img {
+        width: 35px;         
+    }
+    .happy-dev-href a {
+        font-size: 16px;
+    }
+    .event-title {
+        font-size: 32px;
+    }
+    .event-description {
+        margin-top: 10px;        
+        font-size: 16px;
+    }
+    .social {
+        margin-top: 40px;
+    }
+    .email {
+        margin-top: 90px;
+    }
+    .email p {         
+        font-size: 17px;
+    }
+    .talks-block .name {
+        font-size: 16px;
+    }
+    .talks-block .position,
+    .talks-block .position a{
+        font-size: 6px;
+    }
+}
+
+
