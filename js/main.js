@@ -1,19 +1,53 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
-/*if (!document.images)
-return*/
-
-
-var step=0;
-
-var slideit = function() {
-    console.log(step);
-   
-if (step<2)
-step++;
-else
-step=0;
-setTimeout(slideit,3000)
-}
-slideit();
+    var pause = false;
+    var rotateOn;
+    var toNext = function(){
+        active = $('.background .active');
+        images = $('.background .carousel');  
+        if (active.next().length>0){
+            next = active.next();
+        }else {
+            next = images.first();
+        }
+        active.animate({opacity: 0}, 1500);
+        active.removeClass('active');
+        next.animate({opacity: 1}, 1500);        
+        next.addClass('active');
+    }
+    
+    var toPrev = function(){
+        active = $('.background .active');
+        images = $('.background .carousel');       
+        if (active.prev().length>0){
+            prev = active.prev();
+        }else {
+            prev = images.last();
+        }
+        active.animate({opacity: 0}, 1500);
+        active.removeClass('active');
+        prev.animate({opacity: 1}, 1500);
+        prev.addClass('active');        
+    }
+    var autoRotate = function(){
+        if (!pause) {
+            toNext();
+            rotateOn = setTimeout(autoRotate, 10000);
+        }        
+    }
+    $(document).on('click', '.js-right-arr', function() {
+        pause = true;
+        clearTimeout(rotateOn);
+        toNext();
+        pause = false;
+        rotateOn = setTimeout(autoRotate, 10000);
+    });
+    $(document).on('click', '.js-left-arr', function() {
+        pause = true;
+        clearTimeout(rotateOn);
+        toPrev();
+        pause = false;
+        rotateOn = setTimeout(autoRotate, 10000);
+    });
+    setTimeout(autoRotate, 10000);
 });

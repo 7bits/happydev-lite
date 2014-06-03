@@ -9,26 +9,134 @@
     min-width: 260px;
 }
 
-.overlay {
-    background: rgba(132,164,201, 0.54);
-}
-.carousel {    
+.background {
+/*    height: 1200px;*/
+}/*
+.carousel {   
+    width: 100%;
+    height: 1200px;
     background-position: center top;
+    background-position: 85% 0%;
     background-size: cover;
     background-image: url(../img/4.jpg);
     background-repeat: no-repeat;
     padding-top: 18px;
     padding-bottom: 70px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 42s linear infinite 0s;
+    -webkit-animation: imageAnimation 42s linear infinite 0s;
+    
 } 
-.arrows {
-    position: relative;
-    width: 100%;    
+
+.js-carousel-1 {    
+    background-position: 85% 0%;
+    background-image: url(../img/1.jpg);    
+}
+.js-carousel-2 {    
+    background-position: 85% 0%;
+    background-image: url(../img/2.jpg);
+    animation-delay: 6s;
+    -webkit-animation-delay: 6s;
+}
+.js-carousel-3 {    
+    background-position: 85% 0%;
+    background-image: url(../img/3.jpg);
+    animation-delay: 12s;
+    -webkit-animation-delay: 12s;
+}
+.js-carousel-4 {    
+    background-position: 85% 0%;
+    background-image: url(../img/4.jpg);
+    animation-delay: 18s;
+    -webkit-animation-delay: 18s;
+}
+.js-carousel-5 { 
+    background-position: 45% -70px;
+    background-image: url(../img/5.jpg);
+    animation-delay: 24s;
+    -webkit-animation-delay: 24s;
+}
+.js-carousel-6 {    
+    background-position: 60% 0%;
+    background-image: url(../img/6.jpg);
+    animation-delay: 30s;
+    -webkit-animation-delay: 30s;
+}
+.js-carousel-7 {    
+    background-position: 85% 0%;
+    background-image: url(../img/7.jpg);
+    animation-delay: 36s;
+    -webkit-animation-delay: 36s;
+}
+@-webkit-keyframes imageAnimation {
+ 0% { opacity: 0; animation-timing-function: ease-in; }
+ 9% { opacity: 1; animation-timing-function: ease-out; }
+ 18% { opacity: 1 }
+ 26% { opacity: 0 }
+ 100% { opacity: 0 }
+}*/
+.carousel {   
+    width: 100%;
+    height: 1200px;
+    background-position: 85% 0%;
+    background-size: cover;
+    background-image: url(../img/4.jpg);
+    background-repeat: no-repeat;
+    padding-top: 18px;
+    padding-bottom: 70px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+} 
+
+.js-carousel-1 {    
+    background-position: 85% 0%;
+    background-image: url(../img/1.jpg);    
+}
+.js-carousel-2 {    
+    background-position: 85% 0%;
+    background-image: url(../img/2.jpg);
+}
+.js-carousel-3 {    
+    background-position: 85% 0%;
+    background-image: url(../img/3.jpg);
+}
+.js-carousel-4 {    
+    background-position: 85% 0%;
+    background-image: url(../img/4.jpg);
+}
+.js-carousel-5 { 
+    background-position: 45% -70px;
+    background-image: url(../img/5.jpg);
+}
+.js-carousel-6 {    
+    background-position: 60% 0%;
+    background-image: url(../img/6.jpg);
+}
+.js-carousel-7 {    
+    background-position: 85% 0%;
+    background-image: url(../img/7.jpg);
+}
+
+.active {
+    opacity : 1.0;
 }
 
 .right-arr, .left-arr {
     position: absolute;
     top: 444px;
+    z-index: 999;
 }
+/*TODO эффект при наведении*/
+.right-arr:hover, .left-arr:hover {
+    
+}
+
 .left-arr {
     left: 6%;
 }
@@ -39,9 +147,16 @@
 .right-arr:hover, .left-arr:hover {
     cursor: pointer;
 }
+.overlay {
+    background: rgba(132,164,201, 0.44);
+}
+.page-content {
+    position: absolute;
+    top: 0;
+    left:0;
+    
+}
 .container {
-    //padding-left: 0px;
-    //padding-right: 0px;
     max-width: 930px;
 }
 
@@ -101,7 +216,7 @@
     
 }
 .email {
-    margin-top: 135px;
+    margin-top: 135px;    
 }
 .email .email-form-xs {
     display: none;    
@@ -128,6 +243,7 @@
 
 .email .btn {
     background-color: #185dab;    
+    margin-bottom: 65px;
 }
 
 .white-back {
