@@ -19,19 +19,11 @@
     display: inline-block;
     text-decoration: none;
 }
-.share a:hover img {
-    display: none;
-}
-.share a:hover .hovered-img {
-    display: inline;
-}
-.hovered-img {
-    display: none;
-}
-.share .tw-counter,
+.tw-counter,
 .vk-counter,
 .fb-counter {
     border: 4px solid #c1c1c1;
+    -webkit-border-radius: 25px;
     border-radius: 25px;
 }
 .share .counter {
@@ -42,18 +34,23 @@
     font-size: 25px;
     line-height: 25px;
 }
-.share .tw-share:hover .tw-counter,
-.tw-share:hover .tw-counter .counter {
+
+.share-hovered {
+    cursor: pointer;
+}
+.share-hovered .tw-counter, 
+.share-hovered .tw-counter .counter{
     border-color: #00aeef;
     color: #00aeef;
 }
-.share .vk-share:hover .vk-counter,
-.vk-share:hover .vk-counter .counter {
+
+.share-hovered .vk-counter,
+.share-hovered .vk-counter .counter {
     border-color: #45668e;
     color: #45668e;
 }
-.share .fb-share:hover .fb-counter,
-.fb-share:hover .fb-counter .counter {
+.share-hovered .fb-counter,
+.share-hovered .fb-counter .counter {
     border-color: #3b5998;
     color: #3b5998;
 }

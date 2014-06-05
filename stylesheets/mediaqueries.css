@@ -122,12 +122,17 @@
     }
     .share-counter {
         width: 145px;
+        width: 30%;
     }
     .share-counter div {
         float: left;
     }
+    .share-block {
+        width: 90%;
+    }
     .share-block .share-logo {
         width: 50px;
+        width: 10%;
     }
     .share img {
         float: right;

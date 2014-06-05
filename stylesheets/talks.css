@@ -21,12 +21,14 @@
     padding: 65px 40px;
     border: 3px solid;
     border-color: #c1c1c1;
+    -webkit-border-radius: 20px;
     border-radius: 20px;
 }
 .talks-block img {
     float: left;
     margin-right: 45px;
     margin-bottom: 10px;
+    -webkit-border-radius: 20px;
     border-radius: 20px;
 }
 .talks-block p {

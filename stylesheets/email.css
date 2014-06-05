@@ -18,6 +18,7 @@
 .email input,
 .email .btn {
     height: 60px;
+    -webkit-border-radius: 20px;
     border-radius: 20px;
     font-size: 25px;
     font-family: PFAgoraSansPro-Thin;

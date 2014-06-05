@@ -4,7 +4,7 @@
 }
 .container-fluid {
     padding: 0px;
-    /*   min-width: 200px;     */
+    min-width: 260px; 
     width: 100%;
     font-family: PFAgoraSansPro;
 }
@@ -26,4 +26,11 @@
 .white-back {
     padding-top: 45px;
     background: #ffffff;
+}
+
+.hided {
+    display: none;
+}
+.inline {
+    display: inline;
 }
