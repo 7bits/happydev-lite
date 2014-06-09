@@ -12,6 +12,7 @@ $(document).ready(function() {
 				validationResult.text('');
 				email.val('');
 				email.removeClass(textDanger);
+				email.removeClass(fildDanger);
 				email.removeClass(textWarning);
 				email.removeClass(fildWarning);
 				email.removeClass(textDone);

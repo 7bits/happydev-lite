@@ -1,60 +1,62 @@
-$(document).ready(function () {
-
-    var pause = false;
-    var toNext = function () {
-        active = $('.js-background .active');
-        images = $('.js-background .js-carousel');
-        if (active.next().length > 0) {
-            next = active.next();
-        } else {
-            next = images.first();
-        }
-        active.animate({
-            opacity: 0
-        }, 1500);
-        active.removeClass('active');
-        next.animate({
-            opacity: 1
-        }, 1500);
-        next.addClass('active');
-    };
-
-    var toPrev = function () {
-        active = $('.js-background .active');
-        images = $('.js-background .js-carousel');
-        if (active.prev().length > 0) {
-            prev = active.prev();
-        } else {
-            prev = images.last();
-        }
-        active.animate({
-            opacity: 0
-        }, 1500);
-        active.removeClass('active');
-        prev.animate({
-            opacity: 1
-        }, 1500);
-        prev.addClass('active');
-    };
-    var autoRotate = function () {
-        if (!pause) {
-            toNext();
-            rotateOn = setTimeout(autoRotate, 10000);
-        }
-    };
-    $(document).on('click', '.js-right-arr', function () {
-        pause = true;
-        clearTimeout(rotateOn);
-        toNext();
-        pause = false;
-        rotateOn = setTimeout(autoRotate, 10000);
-    });
-    $(document).on('click', '.js-left-arr', function () {
-        pause = true;
-        clearTimeout(rotateOn);
-        toPrev();
-        pause = false;
-        rotateOn = setTimeout(autoRotate, 10000);
-    });
-    var rotateOn = setTimeout(autoRotate, 10000);
+$(document).ready(function() {
+  var animate, autoRotate, rotate, toNext, toPrev;
+  rotate = {
+    on: function() {
+      return this.timer = setTimeout(autoRotate, 6000);
+    },
+    off: function() {
+      return clearTimeout(this.timer);
+    },
+    timer: 0
+  };
+  animate = function(element, active) {
+    var activeClass, animationTime;
+    animationTime = 1500;
+    activeClass = 'active';
+    active.animate({
+      opacity: 0
+    }, animationTime);
+    active.removeClass(activeClass);
+    element.animate({
+      opacity: 1
+    }, animationTime);
+    return element.addClass(activeClass);
+  };
+  toNext = function() {
+    var active, images, next;
+    active = $('.js-background .active');
+    images = $('.js-background .js-carousel');
+    if (active.next().length > 0) {
+      next = active.next();
+    } else {
+      next = images.first();
+    }
+    return animate(next, active);
+  };
+  toPrev = function() {
+    var active, images, prev;
+    active = $('.js-background .active');
+    images = $('.js-background .js-carousel');
+    if (active.prev().length > 0) {
+      prev = active.prev();
+    } else {
+      prev = images.last();
+    }
+    return animate(prev, active);
+  };
+  autoRotate = function() {
+    toNext();
+    return rotate.on();
+  };
+  $(document).on('click', '.js-right-arr', function() {
+    rotate.off();
+    toNext();
+    return rotate.on();
+  });
+  $(document).on('click', '.js-left-arr', function() {
+    rotate.off();
+    toPrev();
+    return rotate.on();
+  });
+  return rotate.on();
 });
