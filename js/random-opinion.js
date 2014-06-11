@@ -1,23 +1,24 @@
-// $(document).ready(function() {
-//   Array.prototype.shuffle = function( b )
-//     {
-//      var i = this.length, j, t;
-//      while( i ) 
-//      {
-//       j = Math.floor( ( i-- ) * Math.random() );
-//       t = b && typeof this[i].shuffle!=='undefined' ? this[i].shuffle() : this[i];
-//       this[i] = this[j];
-//       this[j] = t;
-//      }
+function getRandom(arr, n) {
+  var result = new Array(n),
+      len = arr.length,
+      taken = new Array(len);
+  if (n > len)
+    throw new RangeError("getRandom: more elements taken than available");
+  while (n--) {
+    var x = Math.floor(Math.random() * len);
+    result[n] = arr[x in taken ? taken[x] : x];
+    taken[x] = --len;
+  }
+  return result;
+}
 
-//      return this;
-//     };
-//   var opinions = $('.js-opinion');
-//   var shuffledOpinions = [];
-//   for(var opinion in opinions) {
-//     shuffledOpinions.push(opinion);
-//   };
-//   shuffledOpinions.shuffle();
-//   console.log(opinions);
-//   console.log(shuffledOpinions);
-// });
+
+$(document).ready(function() {
+  var opinions = $('.js-opinion');
+  var randomOpinions = getRandom(opinions, 3);
+  for(var i = 0; i < randomOpinions.length; i++) {
+    $(randomOpinions[i]).removeClass('hide');
+  }
+  console.log(opinions);
+  console.log(randomOpinions);
+});
