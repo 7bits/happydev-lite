@@ -34,7 +34,7 @@ $(document).ready(function() {
                 statusCode: {
                     0: function (){
                         //Success message
-                        validationResult.text('Подписка оформлена!');
+                        validationResult.text('Ура! Подписка оформлена!');
                         validationResult.addClass(textDone);
                     },
                     200: function (){
@@ -43,13 +43,13 @@ $(document).ready(function() {
                 }
             });
 					} else {
-						validationResult.text('Не верно');
+						validationResult.text('Некорректный e-mail');
 						validationResult.addClass(textDanger);
 						email.addClass(textDanger);
 						email.addClass(fildDanger);
 					}
 		} else {
-			validationResult.text('Вы оставили поле пустым');
+			validationResult.text('Поле не заполнено.. Ай-я-яй..');
 			validationResult.addClass(textWarning);
 			email.addClass(fildWarning);
 		}

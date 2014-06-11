@@ -81,7 +81,7 @@
     .email {
         margin-top: 80px;
     }
-    .email p {
+    .email p, .validation-result {
         font-size: 25px;
     }
     .email input,
@@ -108,7 +108,7 @@
         background-position: 35% -280px;
     }
 }
-}
+
 @media (max-width: 500px) {
     .email-form {
         width: 100%;
@@ -165,13 +165,21 @@
     .email {
         margin-top: 105px;
     }
-    .email .email-form {
-        display: none;
-    }
-    .email .email-form-xs {
+
+    .email .input-group {
         display: block;
     }
-    .email p {
+    .email .input-group-btn:last-child > .btn,
+     .input-group-btn:last-child > .btn-group, 
+     .input-group .form-control:first-child {
+        width: 100%;
+        border-radius: 20px;
+        text-align: center;
+    }
+    .email .btn {
+        margin-top: 15px;
+    }
+    .email p,.validation-result {
         font-size: 20px;
     }
     .white-back {

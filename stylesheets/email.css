@@ -2,12 +2,6 @@
     margin-top: 135px;
     margin-bottom: 70px;
 }
-.email .email-form-xs {
-    display: none;
-}
-.email-form-xs .btn {
-    margin-top: 15px;
-}
 .email p {
     color: #3f3f3f;
     font-size: 30px;

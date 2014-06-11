@@ -19,6 +19,11 @@ $(document).ready(function() {
   for(var i = 0; i < randomOpinions.length; i++) {
     $(randomOpinions[i]).removeClass('hide');
   }
-  console.log(opinions);
-  console.log(randomOpinions);
+  $('article').readmore({
+    speed: 500,
+    moreLink: '<a href="">Показать полностью</a>',
+    lessLink: '<a href="">Скрыть</a>'
+  });
+  // console.log(opinions);
+  // console.log(randomOpinions);
 });
