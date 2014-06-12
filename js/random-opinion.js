@@ -19,7 +19,33 @@ $(document).ready(function() {
   for(var i = 0; i < randomOpinions.length; i++) {
     $(randomOpinions[i]).removeClass('hide');
   }
-  $('article').readmore({
+
+  // $(function(){
+  //   var slideHeight = 200; // px    
+  //   var defHeight = $('#wrap').height();
+  //   if(defHeight >= slideHeight){
+  //     $('#wrap').css('height' , slideHeight + 'px');
+  //     $('#read-more').append('<a href="#">Click to Read More</a>');
+  //     $('#read-more a').click(function(){
+  //       var curHeight = $('#wrap').height();
+  //       if(curHeight == slideHeight){
+  //         $('#wrap').animate({
+  //           height: defHeight
+  //         }, "normal");
+  //         $('#read-more a').html('Close');
+  //         $('#gradient').fadeOut();
+  //       }else{
+  //         $('#wrap').animate({
+  //           height: slideHeight
+  //         }, "normal");
+  //         $('#read-more a').html('Click to Read More');
+  //         $('#gradient').fadeIn();
+  //       }
+  //       return false;
+  //     });
+  //   }
+  // });
+  $('.js-content').readmore({
     speed: 500,
     moreLink: '<a href="">Показать полностью</a>',
     lessLink: '<a href="">Скрыть</a>'
