@@ -1,12 +1,16 @@
 .happy-dev-href {
     margin-top: 18px;     
-    width: 100%;
-    text-align: right;
+    /*width: 100%;
+    text-align: right;*/
 }
-.happy-dev-href a {
+.happy-dev-href span {
     color: #000000;
     text-decoration: underline;
     font-size: 22px;
+}
+
+.happy-dev-href a:hover {
+    text-decoration: none;
 }
 
 .logo {
@@ -34,7 +38,7 @@
 
 .social {
     margin-top: 85px;
-    width: 128px;
+    width: 95px;
 }
 .social a {
     padding-right: 6.5px;
