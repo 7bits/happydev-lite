@@ -1,0 +1,117 @@
+.date{
+            background: none;
+            background-color: #e6e6e6;
+            height: 26px;
+            width: 150px;
+            color: #000;
+            float: right;
+            margin-top: -55px;
+        }
+        body{
+            background: none;
+            background-color: #fff;
+        }
+        .title{
+            text-transform: uppercase;
+            color: #000;
+            margin-bottom: 30px;
+            padding-top: 15px;
+        }
+        .header{
+            height: 250px;
+            padding-top: 30px;
+            width: 730px;
+        }
+        .header{
+            background-color: #fff;
+            //pattern!
+        }
+        .logo-text, .logo-text span{
+            color: #000;
+        }
+        .logo-text .lite{
+            color: #185dab;
+        }
+        .under-logo-text{
+            color: #b41f32;
+             text-transform: uppercase;
+             text-decoration: none;
+             padding-top: 30px;
+        }
+        .site-link a{
+            float: left;
+            font-family: Arial;
+            text-transform: uppercase;
+            background-color: #e6e6e6;
+            padding: 10px 15px;
+            font-size: 16px;
+        }
+        .site-link a:hover{
+            color: #b41f32;
+        }
+        .logo{
+            margin-top: 40px;
+        }
+        .posts li.post{
+            border: 1px solid #d9d9d9;
+            border-radius: 20px;
+        }
+        .footer-post a, {
+            color: #185dab;
+            text-transform: uppercase;
+        }
+        .footer-post a:hover, .posts a:hover{
+            color: #b41f32;
+        }
+        .posts a{
+            color: #185dab;
+        }
+        .post ul li:before{
+            color: #185dab;
+            margin-right: 10px;
+        }
+        .blog-footer{
+            background-image: none;
+        }
+        .social-text{
+            color: #000;
+            text-transform: uppercase;
+        }
+        .lights-blog-footer{
+            background: none;//pattern!
+        }
+        .ref-resources {
+            color: #185dab;
+            text-decoration: none;
+            border-bottom: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        .ref-navigation a.prev, .ref-navigation a.next{
+            color: #000;
+            text-transform: uppercase;
+            font-size: 16px;
+            background-color: #e6e6e6;
+            padding: 10px 15px;
+        }
+        .ref-navigation a.prev:hover, .ref-navigation a.next: :hover{
+            color: #b41f32;
+        }
+        .info-company{
+            color: #000;
+            text-transform: uppercase;
+            font-size: 16px;
+           margin-right: 0px;
+        }
+        .info-company a{
+            color: #185dab;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        .info-company a:hover{
+            color: #b41f32;
+        }
+        .links{
+            width: 730px;
+        }
