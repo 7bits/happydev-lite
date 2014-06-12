@@ -59,12 +59,8 @@
 .talks-block .content {
     margin-top: 30px;
     color: #484848;
-    font-size: 20px;    /*max-height: 550px;*/
+    font-size: 20px;
 }
-.talks-block article {
-    height: auto;
-}
-
 .readmore-js-toggle,.readmore-js-toggle:hover  {
     color: #a0a0a0;
 }
