@@ -1,7 +1,5 @@
 .happy-dev-href {
     margin-top: 18px;     
-    /*width: 100%;
-    text-align: right;*/
 }
 .happy-dev-href span {
     color: #000000;
@@ -14,10 +12,11 @@
 }
 
 .logo {
-    margin-top: 13px;
+    padding-top: 35px;
 }
 .logo img {
     width: 147px;
+    
 }
 .event-title {
     margin-top: 36px;
@@ -36,20 +35,7 @@
     font-size: 29px;
 }
 
-.social {
-    margin-top: 85px;
-    width: 95px;
-}
-.social a {
-    padding-right: 6.5px;
-    padding-left: 6.5px;
-    text-decoration: none;
-}
-.date {
-    margin-top: 26px;
-}
-.date p {
-    color: #000000;    
-    text-transform: uppercase;
-    font-size: 25px;
+
+.header-row {
+    position: relative;
 }

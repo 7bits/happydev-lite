@@ -1,10 +1,13 @@
+body {
+    
+}
 .col-centred {
     float: none;
     margin: 0 auto;
 }
 .container-fluid {
-    padding: 0px;
-    min-width: 260px; 
+    min-width: 320px; 
+    padding: 0px;    
     width: 100%;
     font-family: PFAgoraSansPro;
 }
@@ -24,8 +27,8 @@
     margin-left: 0px;
 }
 .white-back {
-    padding-top: 45px;
     background: #ffffff;
+    padding-bottom: 20px;
 }
 
 .hided {
