@@ -27,8 +27,8 @@ $(document).ready(function() {
 						email.removeClass(fildDanger);
 						email.removeClass(textDanger);
 						$.ajax({
-                url: "https://docs.google.com/forms/d/1LKyh4v2W-oYjXtLoqroKJ7U5i_SGKHKtdCylBXGrXXs/formResponse",
-                data: {"entry.1569866430" : emailValue},
+                url: "https://docs.google.com/a/7bits.it/forms/d/1LMeVrPoJar9pBP3O0QSlOjAMaKGjH4_5jD253iESATs/formResponse",
+                data: {"entry.1926142699" : emailValue},
                 type: "POST",
                 dataType: "xml",
                 statusCode: {

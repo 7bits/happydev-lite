@@ -4,7 +4,7 @@ $(window).scroll( function(){
   //get scroll position
   var topWindow = $(window).scrollTop();
   //multiply by 1.5 so the arrow will become transparent half-way up the page
-  var topWindow = topWindow * 1.5;
+  var topWindow = topWindow * 0.5;
   
   //get height of window
   var windowHeight = $(window).height();
