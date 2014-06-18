@@ -8,14 +8,14 @@ var socialShare = {
         url += '&noparse=true';
         socialShare.popup(url);
     },
-    facebook: function(purl, ptitle, pimg, text) {
-        url  = 'http://www.facebook.com/sharer.php?s=100';
-        url += '&p[title]='     + encodeURIComponent(ptitle);
-        url += '&p[summary]='   + encodeURIComponent(text);
-        url += '&p[url]='       + encodeURIComponent(purl);
-        url += '&p[images][0]=' + encodeURIComponent(pimg);
-        socialShare.popup(url);
-    },
+    // facebook: function(purl, ptitle, pimg, text) {
+    //     url  = 'http://www.facebook.com/sharer.php?s=100';
+    //     url += '&p[title]='     + encodeURIComponent(ptitle);
+    //     url += '&p[summary]='   + encodeURIComponent(text);
+    //     url += '&p[url]='       + encodeURIComponent(purl);
+    //     url += '&p[images][0]=' + encodeURIComponent(pimg);
+    //     socialShare.popup(url);
+    // },
     twitter: function(purl, ptitle) {
         url  = 'http://twitter.com/share?';
         url += 'text='      + encodeURIComponent(ptitle);
@@ -32,12 +32,12 @@ var socialShare = {
 var socialCounters = {
 
     // получаем счетчик facebook
-    fbCount: function(container){
-        $.getJSON('http://api.facebook.com/restserver.php?method=links.getStats&callback=?&urls=' + escape(pageuri) + '&format=json', function(data) {
-            // вставляем в DOM
-            $('p', container).text(data[0].share_count);
-        });
-    },
+    // fbCount: function(container){
+    //     $.getJSON('http://api.facebook.com/restserver.php?method=links.getStats&callback=?&urls=' + escape(pageuri) + '&format=json', function(data) {
+    //         // вставляем в DOM
+    //         $('p', container).text(data[0].share_count);
+    //     });
+    // },
     // получаем счетчик vkontakte
     // паучьим чутьем чую, что тут какой-то косяк
     vkCount: function(container){
@@ -60,27 +60,27 @@ var socialCounters = {
 
 $(document).ready(function () {
     pageuri = $(location).attr('href');
-    socialCounters.fbCount('.js-fb-counter');
+    // socialCounters.fbCount('.js-fb-counter');
     socialCounters.vkCount('.js-vk-counter');
     socialCounters.twCount('.js-tw-counter');
 
 
-    $('js-fb-share').on('touchend', function(e) {
-    var o = e.originalEvent;
-    var isTouch = o instanceof TouchEvent && o.changedTouches.length === 1;
+//     $('js-fb-share').on('touchend', function(e) {
+//     var o = e.originalEvent;
+//     var isTouch = o instanceof TouchEvent && o.changedTouches.length === 1;
 
-    if (isTouch) {
-        $(this).toggleClass('is-on');
-    }
-});
+//     if (isTouch) {
+//         $(this).toggleClass('is-on');
+//     }
+// });
 
-    $(document).on('click', '.js-fb-share', function () {
-        socialShare.facebook('URL','TITLE','IMG_PATH','DESC');
-    });
+    // $(document).on('click', '.js-fb-share', function () {
+    //     socialShare.facebook('URL','TITLE','IMG_PATH','DESC');
+    // });
     $(document).on('click', '.js-vk-share', function () {
-        socialShare.vkontakte('URL','TITLE','IMG_PATH','DESC');
+        socialShare.vkontakte('URL','Большая конференция для студентов и школьников HappyDev-lite!','../img/for-post-vk.jpg','Узнай о регистрации первым! Подпишись на рассылку на сайте: http://happydev-lite.ru');
     });
     $(document).on('click', '.js-tw-share', function () {
-        socialShare.twitter('URL','TITLE');
+        socialShare.twitter('URL','Большая конференция для студентов и школьников HappyDev-lite: http://happydev-lite.ru Узнай о регистрации первым!');
     });
 });

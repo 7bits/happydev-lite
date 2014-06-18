@@ -1,15 +1,16 @@
 body {
-    
+    /*width: 100%;*/
+    /*min-width: 320px;*/
 }
 .col-centred {
     float: none;
     margin: 0 auto;
 }
 .container-fluid {
-    min-width: 320px; 
     padding: 0px;    
     width: 100%;
     font-family: PFAgoraSansPro;
+    min-width: 320px;
 }
 .overlay {
     background: rgba(132, 164, 201, 0.44);

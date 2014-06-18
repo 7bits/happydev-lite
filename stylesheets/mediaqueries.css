@@ -3,9 +3,6 @@
     .social {
         margin-top: 55px;
     }
-    .email {
-        margin-top: 105px;
-    }
     .talks-block .content {
         margin-top: 18px;
         font-size: 20px;
@@ -67,9 +64,6 @@
     .social {
         margin-top: 20px;
     }
-    .email {
-        margin-top: 80px;
-    }
     .email p, .validation-result {
         font-size: 25px;
     }
@@ -129,7 +123,7 @@
     }
     /*separation of email input form */
     .email {
-        margin-top: 105px;
+        margin-top: 60px;
     }
 
     .email .input-group {
@@ -141,6 +135,9 @@
         width: 100%;
         border-radius: 20px;
         text-align: center;
+    }
+    .input-group-btn{
+    display: inline;
     }
     .email .btn {
         margin-top: 15px;
@@ -212,7 +209,7 @@
         margin-top: 40px;
     }
     .email {
-        margin-top: 90px;
+        margin-top: 50px;
     }
     .talks-block .name {
         font-size: 20px;
@@ -235,5 +232,18 @@
     }
     .carousel-7 {
         background-position: 90% -265px;
+    }
+
+    .contacts div p {
+        font-size: 15px;
+    }
+    .contacts div span {
+        font-size: 16px;
+    }
+    .contacts p {
+        font-size: 28px;
+    }
+    .copyright a {
+        font-size: 18px;
     }
 }

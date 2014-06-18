@@ -26,6 +26,10 @@
     background-position: 92% -166px;
     background-image: url(../img/7.jpg);
 }
+.background {
+    position: relative;
+    width: 100%;
+}
 .carousel {
     width: 100%;
     /*TODO проверить на больших разрешениях*/
