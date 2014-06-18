@@ -78,7 +78,7 @@ $(document).ready(function () {
     //     socialShare.facebook('URL','TITLE','IMG_PATH','DESC');
     // });
     $(document).on('click', '.js-vk-share', function () {
-        socialShare.vkontakte('URL','Большая конференция для студентов и школьников HappyDev-lite!','../img/for-post-vk.jpg','Узнай о регистрации первым! Подпишись на рассылку на сайте: http://happydev-lite.ru');
+        socialShare.vkontakte('http://happydev-lite.ru/','Большая конференция для студентов и школьников HappyDev-lite!','../img/for-post-vk.jpg','Узнай о регистрации первым! Подпишись на рассылку на сайте: http://happydev-lite.ru');
     });
     $(document).on('click', '.js-tw-share', function () {
         socialShare.twitter('URL','Большая конференция для студентов и школьников HappyDev-lite: http://happydev-lite.ru Узнай о регистрации первым!');
