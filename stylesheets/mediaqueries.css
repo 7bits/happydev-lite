@@ -1,30 +1,17 @@
+
 @media (max-width: 900px) {
-    .right-arr,
-    .left-arr {
-        top: 430px;
-    }
     .social {
         margin-top: 55px;
-    }
-    .email {
-        margin-top: 105px;
     }
     .talks-block .content {
         margin-top: 18px;
         font-size: 20px;
     }
-    .white-back {
-        padding-bottom: 55px;
-    }
-    .talks {
-        margin-top: 55px;
-    }
     .footer {
         margin-top: 55px;
-        margin-bottom: 45px;
     }
-    .footer a {
-        margin-top: 20px;
+    .copyright a {
+        margin-top: 100px;
     }
     .opinion, .media:first-child {
         margin-top: 55px;
@@ -67,9 +54,8 @@
     .happy-dev-href a {
         font-size: 20px;
     }
-    .right-arr,
-    .left-arr {
-        top: 410px;
+    .social-container {
+        width: 100%;
     }
     .right-arr img,
     .left-arr img {
@@ -77,9 +63,6 @@
     }
     .social {
         margin-top: 20px;
-    }
-    .email {
-        margin-top: 80px;
     }
     .email p, .validation-result {
         font-size: 25px;
@@ -96,7 +79,7 @@
         background-position: 82% -210px;
     }
     .carousel-2 {
-        background-position: 50% -390px;
+        background-position: 50% -350px;
     }
     .carousel-3 {
         background-position: 65% -230px;
@@ -113,35 +96,12 @@
     .email-form {
         width: 100%;
     }
-    .share a {
-        width: 100%;
+    .logo {
+        padding-top: 115px;
     }
-    .share-logo {
-        margin-right: 5px;
-    }
-    .share-counter {
-        width: 145px;
-        width: 30%;
-    }
-    .share-counter div {
-        float: left;
-    }
-    .share-block {
-        width: 90%;
-    }
-    .share-block .share-logo {
-        width: 50px;
-        width: 10%;
-    }
-    .share img {
-        float: right;
-    }
+
 }
 @media (max-width: 455px) {
-    .right-arr,
-    .left-arr {
-        top: 383px;
-    }
     .happy-dev-href a {
         font-size: 18px;
     }
@@ -163,7 +123,7 @@
     }
     /*separation of email input form */
     .email {
-        margin-top: 105px;
+        margin-top: 60px;
     }
 
     .email .input-group {
@@ -176,14 +136,14 @@
         border-radius: 20px;
         text-align: center;
     }
+    .input-group-btn{
+    display: inline;
+    }
     .email .btn {
         margin-top: 15px;
     }
     .email p,.validation-result {
         font-size: 20px;
-    }
-    .white-back {
-        padding-bottom: 45px;
     }
     .share p {
         margin-bottom: 0px;
@@ -198,36 +158,36 @@
     .talks-block .content {
         font-size: 18px;
     }
-    .talks {
-        margin-top: 45px;
-    }
     .talks-block {
-        /*padding-top: 30px;*/
         padding-right: 15px;
-        padding-bottom: 20px;
+        padding-bottom: 30px;
         padding-left: 15px;
+    }
+    .more-info p {
+        font-size: 20px;
+    }
+    .more-info a, .more-info p {
+        width: 200px;
     }
     .opinion, .media:first-child {
         margin-top: 25px;
     }
     .footer {
         margin-top: 45px;
-        margin-bottom: 35px;
     }
-    .footer a {
-        margin-top: 15px;
-    }
+    
+
     .carousel-1 {
-        background-position: 78% -255px;
+        background-position: 78% -245px;
     }
     .carousel-2 {
-        background-position: 50% -400px;
+        background-position: 50% -250px;
     }
     .carousel-4 {
-        background-position: 73% -295px;
+        background-position: 73% -245px;
     }
     .carousel-5 {
-        background-position: 35% -280px;
+        background-position: 35% -250px;
     }
     .carousel-6 {
         background-position: 75% -65px;
@@ -237,10 +197,7 @@
     }
 }
 @media (max-width: 330px) {
-    .right-arr,
-    .left-arr {
-        top: 390px;
-    }
+
     .right-arr img,
     .left-arr img {
         width: 35px;
@@ -252,7 +209,7 @@
         margin-top: 40px;
     }
     .email {
-        margin-top: 90px;
+        margin-top: 50px;
     }
     .talks-block .name {
         font-size: 20px;
@@ -265,15 +222,28 @@
         font-size: 16px;
     }
     .carousel-1 {
-        background-position: 75% -320px;
+        background-position: 75% -270px;
     }
     .carousel-2 {
-        background-position: 49% -500px;
+        background-position: 49% -270px;
     }
     .carousel-3 {
-        background-position: 67% -230px;
+        background-position: 67% -190px;
     }
     .carousel-7 {
-        background-position: 90% -325px;
+        background-position: 90% -265px;
+    }
+
+    .contacts div p {
+        font-size: 15px;
+    }
+    .contacts div span {
+        font-size: 16px;
+    }
+    .contacts p {
+        font-size: 28px;
+    }
+    .copyright a {
+        font-size: 18px;
     }
 }

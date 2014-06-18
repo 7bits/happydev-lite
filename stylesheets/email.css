@@ -1,6 +1,6 @@
 .email {
-    margin-top: 135px;
-    margin-bottom: 70px;
+    margin-top: 80px;
+    margin-bottom: 60px;
 }
 .email p {
     color: #3f3f3f;
@@ -54,4 +54,9 @@
 
 .text-done {
     color: #ffffff;
+}
+
+.email-container {
+    position: relative;
+    clear: both;
 }

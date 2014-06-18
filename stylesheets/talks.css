@@ -1,5 +1,5 @@
 .talks {
-    margin-top: 105px;
+    padding-top: 85px;
     padding-right: 0px;
     padding-left: 0px;
 }
@@ -7,9 +7,9 @@
     position: relative;
     z-index: 999;
     width: 140px;
-    background: #ffffff;
 }
 .headline p {
+    background: #ffffff;
     font-size: 30px;
 }
 .talks p {
@@ -18,7 +18,6 @@
 }
 .talks-block {
     margin-top: -30px;
-    /*padding: 65px 40px;*/
     padding-top: 0px;
     padding-left: 40px;
     padding-right: 40px;
@@ -61,6 +60,22 @@
     color: #484848;
     font-size: 20px;
 }
+
+.more-info {
+    width: 100%;
+    margin-top: -20px;
+}
+.more-info a {
+    width: 280px;
+    color: #3f3f3f;
+    text-decoration: underline;
+}
+.more-info p {
+    font-size: 25px;
+    width: 280px;
+}
+
+
 .readmore-js-toggle,.readmore-js-toggle:hover  {
     color: #a0a0a0;
 }
