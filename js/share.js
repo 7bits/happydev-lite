@@ -61,8 +61,14 @@ var socialCounters = {
 $(document).ready(function () {
     pageuri = $(location).attr('href');
     // socialCounters.fbCount('.js-fb-counter');
-    socialCounters.vkCount('.js-vk-counter');
-    socialCounters.twCount('.js-tw-counter');
+    // socialCounters.vkCount('.js-vk-counter');
+    // socialCounters.twCount('.js-tw-counter');
+
+    var getCounters = function (){
+        socialCounters.vkCount('.js-vk-counter');
+        socialCounters.twCount('.js-tw-counter');
+        setTimeout(getCounters,5000);
+    };
 
 
 //     $('js-fb-share').on('touchend', function(e) {
@@ -79,8 +85,11 @@ $(document).ready(function () {
     // });
     $(document).on('click', '.js-vk-share', function () {
         socialShare.vkontakte('http://happydev-lite.ru/','Большая конференция для студентов и школьников HappyDev-lite!','../img/for-post-vk.jpg','Узнай о регистрации первым! Подпишись на рассылку на сайте: http://happydev-lite.ru');
+        socialCounters.vkCount('.js-vk-counter');
     });
     $(document).on('click', '.js-tw-share', function () {
         socialShare.twitter('URL','Большая конференция для студентов и школьников HappyDev-lite: http://happydev-lite.ru Узнай о регистрации первым!');
+        socialCounters.twCount('.js-tw-counter');
     });
+    getCounters();
 });
