@@ -44,8 +44,19 @@ module.exports = function(grunt) {
             src: 'production/js/main.js',
             dest: 'production/js/main.min.js'
         }
+    },
+    imagemin: {
+        dynamic: {
+            files: [{
+                expand: true,
+                cwd: 'img/',
+                src: ['**/*.{png,jpg,gif}'],
+                dest: 'production/img/'
+            }]
+        }
     }
   });
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-concat-css');
   grunt.loadNpmTasks('grunt-contrib-concat');
