@@ -1,5 +1,5 @@
 .happy-dev-href {
-    margin-top: 18px;     
+    margin-top: 18px;
 }
 .happy-dev-href span {
     color: #000000;
@@ -17,6 +17,13 @@
 .logo img {
     width: 147px;
     
+}
+.logo a {
+    text-decoration: none;
+    color:#000000;
+} 
+.lgo a:hover {
+    text-decoration: none;
 }
 .event-title {
     margin-top: 36px;
