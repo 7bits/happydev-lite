@@ -1,6 +1,6 @@
 .background {
     position: absolute;
-    top: 46px;
+    top: 0px;
 }
 .carousel-1 {
     background-position: 85% -100px;
@@ -591,9 +591,9 @@
     position: relative;
     width: 90%;
 }
+
 body {
     /*width: 100%;*/
-    /*min-width: 320px;*/
 }
 .col-centred {
     float: none;
@@ -603,7 +603,7 @@ body {
     padding: 0px;    
     width: 100%;
     font-family: PFAgoraSansPro;
-    min-width: 320px;
+    min-width: 500px;
 }
 .overlay {
     background: rgba(132, 164, 201, 0.44);
@@ -718,7 +718,6 @@ body {
     width: 100%;
     height: 46px;
     background-color: black;
-    position: absolute;
     top: 0px;
 }
 
@@ -726,43 +725,106 @@ body {
     width: 100%;
     height: 100%;
     text-align: center;
-    margin: 0px;    
     padding: 0px;    
+    max-width: 1040px;
+    margin: 0 auto;
 }
 
-.conference-link {
+.menu-link-left {
     height: 100%;
     font-family: PFDinTextCondPro-Regular;
-    text-align: center;
+    text-align: left;
     font-size: 16px;
     color: #e0e0e0;
     list-style: none;
-    margin-left: 100px;
     position: relative;
     top: 0px;
+    left: 0px;
+    margin: 0px;    
+    padding: 0px;
     display: inline-block;
-    line-height: 46px;
     text-transform: uppercase;
     text-decoration: none;
+    float: left;
 }
 
-.conference-link a {
+.menu-link-right {
+    height: 100%;
+    font-family: PFDinTextCondPro-Regular;
+    text-align: right;
+    font-size: 16px;
+    color: #e0e0e0;
+    list-style: none;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    margin: 0px;    
+    padding: 0px;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    float: right;
+}
+
+.menu-link-left li {
+    line-height: 46px;
+    float: left;
+    margin-left: 20px;
+}
+
+.menu-link-right li {
+    line-height: 46px;
+    float: left;
+    margin-right: 20px;
+}
+
+.menu-link-left li a, .menu-link-right li a {
     color: #e0e0e0;
     text-transform: uppercase;
     text-decoration: none;
 }
 
-.conference-link a:hover {
+.menu-link-left li a:hover, .menu-link-right li a:hover {
     color: #b41f32;
     text-decoration: none;
     cursor: pointer;
 }
-.social-links {
-    height: 100%;
+
+.social-links li {
+    height: 46px;
     list-style: none;
 }
 
-.social-links li {
-    height: 100%;
+.social-links a {
+    height: 46px;
     display: inline-block;
+}
+
+.social-link {
+    width: 30px;
+}
+
+.main-menu-vk-link {
+    background: url(/production/img/main-menu-vk.png) no-repeat center;
+    
+}
+
+.main-menu-twitter-link {
+    background: url(/production/img/main-menu-twitter.png) no-repeat center;
+}
+
+.main-menu-facebook-link {
+    background: url(/production/img/main-menu-facebook.png) no-repeat center;
+}
+
+.main-menu-vk-link:hover {
+    background: url(/production/img/main-menu-vk-hover.png) no-repeat center;
+}
+
+.main-menu-twitter-link:hover {
+    background: url(/production/img/main-menu-twitter-hover.png) no-repeat center;
+}
+
+.main-menu-facebook-link:hover {
+    background: url(/production/img/main-menu-facebook-hover.png) no-repeat center;
 }
