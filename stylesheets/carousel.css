@@ -27,7 +27,8 @@
     background-image: url(/production/img/7.jpg);
 }
 .background {
-    position: relative;
+    position: absolute;
+    top: 0px;
     width: 100%;
 }
 .carousel {

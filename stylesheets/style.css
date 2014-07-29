@@ -10,14 +10,14 @@ body {
     padding: 0px;    
     width: 100%;
     font-family: PFAgoraSansPro;
-    min-width: 320px;
+    min-width: 500px;
 }
 .overlay {
     background: rgba(132, 164, 201, 0.44);
 }
 .page-content {
     position: absolute;
-    top: 0;
+    top: 46px;
     left: 0;
 }
 .container {
