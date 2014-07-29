@@ -1,4 +1,8 @@
-.background {} .carousel-1 {
+.background {
+    position: absolute;
+    top: 0px;
+}
+.carousel-1 {
     background-position: 85% -100px;
     background-image: url(/production/img/1.jpg);
 }
@@ -124,6 +128,13 @@
 	font-weight: normal;
 	font-style: normal;
 }
+@font-face {
+    font-family: "PFDinTextCondPro-Regular";
+    src: url('/fonts/PFDinTextCondPro-Light.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 .footer{
     margin-top: 60px;
     padding: 0px;
@@ -580,9 +591,9 @@
     position: relative;
     width: 90%;
 }
+
 body {
     /*width: 100%;*/
-    /*min-width: 320px;*/
 }
 .col-centred {
     float: none;
@@ -592,14 +603,14 @@ body {
     padding: 0px;    
     width: 100%;
     font-family: PFAgoraSansPro;
-    min-width: 320px;
+    min-width: 500px;
 }
 .overlay {
     background: rgba(132, 164, 201, 0.44);
 }
 .page-content {
     position: absolute;
-    top: 0;
+    top: 46px;
     left: 0;
 }
 .container {
@@ -696,7 +707,6 @@ body {
     font-size: 25px;
     width: 280px;
 }
-
 
 .readmore-js-toggle,.readmore-js-toggle:hover  {
     color: #a0a0a0;
