@@ -33,6 +33,10 @@ CSSO install
 ------------
 
 ```  
+$ npm install csso -g
+
+or
+
 $ git clone git://github.com/css/csso.git
 ```
 Check your csso version
