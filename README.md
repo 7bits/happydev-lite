@@ -22,6 +22,11 @@ Grunt install
 
 ```
 $ npm install grunt
+$ npm install -g grunt-cli
+```
+Now you can check your grunt version
+```
+$ grunt -version 
 ```
 
 CSSO install
@@ -31,37 +36,44 @@ CSSO install
 $ git clone git://github.com/css/csso.git
 ```
 
-Before production 
+Now you can check your csso version
+```
+$ csso -v 
+```
 
-CSS concatination 
+
+Before production 
+=============
+
+1. CSS concatination 
 ------------
 
 ```
 $ grunt concat_css
 ```
 
-JS concatination
+2. JS concatination
 ------------
 
 ```
 $ grunt concat
 ```
 
-CSS minification 
+3. CSS minification 
 ------------
 
 ```
 $ csso <in_file_name> <out_file_name>
 ```
 
-JS minification 
+4. JS minification 
 ------------
 
 ```
 $ grunt uglify
 ```
 
-Images minification 
+5. Images minification 
 ------------
 
 ```
