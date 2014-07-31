@@ -36,6 +36,7 @@ $(document).ready(function() {
                         //Success message
                         validationResult.text('Ура! Подписка оформлена!');
                         validationResult.addClass(textDone);
+                        email.val('');
                     },
                     200: function (){
                         //Success Message
